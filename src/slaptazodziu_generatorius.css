@@ -1,0 +1,64 @@
+.container {
+    display:flex;
+    flex-direction:row;
+    gap: 50px;
+    align-items: flex-start; 
+    align-content:center;
+    justify-content:center;
+}
+.generatorContainer {
+    width:70%;
+    height:500px;
+    align-items: center; 
+    align-content:center;
+    justify-content:center;
+    margin-top:100px;
+    margin-left:200px;
+    background-color:rgb(222, 231, 218);
+}
+.previousPasswordsContainer {
+    font-size: 15px;
+    width:200px;
+    background-color:rgb(244, 244, 118);
+    padding:15px;
+    margin:15px;
+}
+.options {
+    padding:20px;
+    display:flex; 
+    flex-direction:column;
+    align-items: center; 
+    justify-content:space-between; 
+    align-content:center;
+}
+.passwordBox {
+    display:inline-flex; 
+    align-items: center; 
+    align-content:center;
+    justify-content:center;
+    font-size: 60px;
+    background-color:aliceblue;
+    margin:10px;
+    padding:10px;
+    border:2px;
+    border-style:dotted;
+}
+.generatePassword {
+    width:200px;
+    height:50px;
+    font-size: 30px;
+}
+.option {
+    width:300px;
+    text-align:left;
+    display:flex;
+    justify-content:space-between; 
+}
+.selectLength {
+    width:30px;
+    height:30px;
+}
+.checkBox {
+    width:35px;
+    height:35px;
+}
