@@ -2,6 +2,9 @@ import React, { useState, useEffect, useRef }  from 'react';
 import './slaptazodziu_generatorius.css'
 
 
+// Kaip ir viskas veikia, įskaitant localstorage, tik kol kas nepavyko padaryti, kad užloadinus būtų pažymėtos didžiosios ir mažosios raidės. Nenaudojau css frameworkų.
+
+
 const Generator = () => {
     let [password, setPassword] = useState('')
     let [passwordLength, setPasswordLength] = useState(5)
@@ -17,7 +20,6 @@ const Generator = () => {
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min) + min)
         }
-    
 
     let addUpperCase = () => {
         SetIncludesUpperCase(!includesUpperCase)
