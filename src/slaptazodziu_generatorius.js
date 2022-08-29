@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef }  from 'react';
 import './slaptazodziu_generatorius.css'
+import CopyButton from './copy_button';
 
 
 // Kaip ir viskas veikia, įskaitant localstorage, tik kol kas nepavyko padaryti, kad užloadinus būtų pažymėtos didžiosios ir mažosios raidės. Nenaudojau css frameworkų.
@@ -7,6 +8,9 @@ import './slaptazodziu_generatorius.css'
 
 const Generator = () => {
     let [password, setPassword] = useState('')
+    // let [copiedPassword, setCoppiedPassword] = useState('')
+    let [mouseOver, setMouseOver] = useState(false)
+
     let [passwordLength, setPasswordLength] = useState(5)
     let [previousPasswords, setPreviousPasswords] = useState([])
     let [includesUpperCase, SetIncludesUpperCase] = useState(true)
@@ -96,10 +100,14 @@ const Generator = () => {
                     <input type="checkbox" name="simboliai" className = "checkBox" onChange = {addSymbols}></input></div>
                 </div>
                 <button onClick = { generatePassword } className = "generatePassword">Generuoti</button><br/>
-                <div className = "passwordBox" style = {{display: password !== '' ? "inline-flex" : "none"}}>
+                <div className = "passwordBox" style = {{display: password !== '' ? "inline-flex" : "none", position: "relative"}}>
                     { password }
+                    <CopyButton
+                    onHoverMessage = 'Kopijuoti slaptažodį'
+                    copiedPassword = {password}
+                    />
                 </div>
-            </div>
+                </div>
             <div className = "previousPasswordsContainer">
                 <h4>Ankstesni slaptažodžiai</h4>
                 {previousPasswords.map((value, index) => <div key = { index }>{ value }</div>)}
