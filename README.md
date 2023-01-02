@@ -3,3 +3,7 @@ Slaptažodžių generatorius su galimybe nustatyti generuojamo slaptažodžio il
 Projektas atliktas su ReactJS.
 
 <b>Projektas pasiekiamas: <a href = "https://mykolasbar.github.io/password-generator/">https://mykolasbar.github.io/password-generator/</a></b>
+
+Eng 
+
+Password generator with ability to generate password ranged 5 to 50 in lenght.
