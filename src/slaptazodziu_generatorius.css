@@ -7,13 +7,13 @@
     justify-content:center;
 }
 .generatorContainer {
-    width:70%;
+    min-width:70%;
     height:500px;
     align-items: center; 
     align-content:center;
     justify-content:center;
     margin-top:100px;
-    margin-left:200px;
+    /* margin-left:200px; */
     background-color:rgb(222, 231, 218);
 }
 .previousPasswordsContainer {
@@ -65,3 +65,12 @@
 .passwordCopy {
     margin:15px;
 }
+
+@media screen and (max-width: 480px) {
+    .container {
+        flex-direction:column;
+    }
+    .generatorContainer {
+        width:100%;
+    }    
+  }
