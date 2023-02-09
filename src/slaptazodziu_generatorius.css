@@ -49,7 +49,7 @@
     font-size: 30px;
 }
 .option {
-    width:300px;
+    max-width:300px;
     text-align:left;
     display:flex;
     justify-content:space-between; 
@@ -73,4 +73,4 @@
     .generatorContainer {
         width:100%;
     }    
-  }
+}
